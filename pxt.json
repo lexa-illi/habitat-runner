@@ -1,5 +1,5 @@
 {
-    "name": "Habitat Runner",
+    "name": "Habitat-Runner1.0",
     "description": "",
     "dependencies": {
         "device": "*",
@@ -14,7 +14,8 @@
         "tilemap.g.jres",
         "tilemap.g.ts",
         "images.g.jres",
-        "images.g.ts"
+        "images.g.ts",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"

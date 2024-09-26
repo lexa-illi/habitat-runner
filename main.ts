@@ -22,7 +22,13 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     	
     }
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`egg 3`, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`egg two`, function (sprite3, location3) {
+    scene.setBackgroundImage(assets.image`Snowy Background`)
+    tiles.setCurrentTilemap(tilemap`level1`)
+    mySprite.setPosition(43, 20)
+    level += 1
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`egg 3`, function (sprite2, location2) {
     scene.setBackgroundImage(assets.image`Snowy Background`)
     tiles.setCurrentTilemap(tilemap`level1`)
     mySprite.setPosition(43, 20)
@@ -85,13 +91,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     	
     }
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`egg two`, function (sprite, location) {
-    scene.setBackgroundImage(assets.image`Snowy Background`)
-    tiles.setCurrentTilemap(tilemap`level1`)
-    mySprite.setPosition(43, 20)
-    level += 1
-})
-scene.onOverlapTile(SpriteKind.Player, assets.tile`Egg one`, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`Egg one`, function (sprite4, location4) {
     scene.setBackgroundImage(assets.image`Snowy Background`)
     tiles.setCurrentTilemap(tilemap`level1`)
     mySprite.setPosition(116, 20)
